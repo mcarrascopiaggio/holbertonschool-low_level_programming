@@ -12,7 +12,7 @@ int main(void)
 	double doubleType;
 	char charType;
 
-	printf("Size of a char: %zu byte\n", sizeof(charType);
+	printf("Size of a char: %zu byte\n", sizeof(charType));
 	printf("Size of an int: %zu bytes\n", sizeof(intType));
 	printf("Size of a long int: %zu bytes\n", sizeof(intType));
 	printf("Size of a long long int: %zu bytes\n", sizeof(doubleType));
