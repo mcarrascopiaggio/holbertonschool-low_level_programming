@@ -3,7 +3,7 @@
 /**
  * main -  prints a phrase followed by a new line.
  * Description: prints a phrase.
- * return: 0.
+ * Return: 0.
  */
 int main(void)
 {
