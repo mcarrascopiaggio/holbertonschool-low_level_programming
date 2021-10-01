@@ -2,8 +2,8 @@
 
 /**
  * main - prints a phrase followed by a new line.
- * description: prints a phrase
- * return: 0.
+ * Description: prints a phrase
+ * Return: 0.
  */
 int main(void)
 {
