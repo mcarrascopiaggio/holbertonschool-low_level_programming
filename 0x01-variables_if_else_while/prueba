@@ -11,14 +11,8 @@ int main(void)
 	int ch;
 
 	for (ch = '0'; ch <= '9'; ch++)
-	{
-		putchar(ch);
-			if (ch == '6')
-			{
-				continue;
-			}
-		putchar (',');
-	}
+	putchar (ch),
+	putchar (',');
 	putchar ('\n');
 	return (0);
 }
