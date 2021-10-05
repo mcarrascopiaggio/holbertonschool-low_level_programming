@@ -2,10 +2,10 @@
 
 
 /**
- *  * main - print the word _putchar
- *   * print the word using the function _putchar
- *    * Return: 0.
- *     */
+ *main - print the word _putchar
+ *print the word using the function _putchar
+ *Return: 0.
+ */
 
 int main(void)
 {
