@@ -13,8 +13,15 @@ int print_last_digit(int n)
 
 	int ln = n % 10;
 
+	if (n < 10)
+	{
+	_putchar(n);
+	}
+	else
+	{
 	_putchar(ln);
+	}
 
-return (ln);
+return (0);
 
 }
