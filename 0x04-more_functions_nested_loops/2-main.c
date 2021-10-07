@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	printf("%d\n", mul(1, 3));
+	printf("%d\n", mul(1, 30));
 	printf("%d\n", mul(-4, 1));
 	return (0);
 }
