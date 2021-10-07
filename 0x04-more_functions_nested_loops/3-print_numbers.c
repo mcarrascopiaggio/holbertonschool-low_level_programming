@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- *mul-  prints times_tablede multiplication from two values
- *@a: the first value
- *@b: the second value
+ *print_numbers-  prints number 0 to 9
  *Return: always 0
  */
 
-int mul(int a, int b)
+void print_numbers(void)
 {
-	int result;
+	int n;
 
-	result = a * b;
-	_putchar(result + '0');
-	return (0);
+	for (n = '0'; n <= '9' ; n++)
+	{
+	_putchar(n);
+	}
+	_putchar('\n');
 }
