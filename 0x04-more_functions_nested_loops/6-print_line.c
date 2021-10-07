@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_line-  prints n
+ *print_line -  prints n
  *@n: number of lines
  *Return: always 0
  */
@@ -20,6 +20,6 @@ void print_line(int n)
 				{
 				_putchar('_');
 				}
+			_putchar('\n');
 		}
-	_putchar('\n');
 }
