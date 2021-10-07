@@ -2,16 +2,16 @@
 
 
 /**
-*_isupper -  check if a variable is uppercase
+*_isdigit-  check if a variable is a digit
 *@c: The integer to print
 *Return: On success 1.
 *On error, -1 is returned, and errno is set appropriately.
 */
 
-int _isupper(int c)
+int _isdigit(int c)
 
 {
-	if (c >= 61  && c <= 121)
+	if (c >= 48  && c <= 57)
 	{
 	return (1);
 	}
