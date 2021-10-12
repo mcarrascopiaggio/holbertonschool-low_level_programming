@@ -20,7 +20,7 @@ for (i = 0; s[i] != 0 ; i++)
 	{
 	l = l + 1;
 	}
-for (j = (l - 1) ; s[j] >= 0 ; j--)
+for (j = (l - 1) ; j >= 0 ; j--)
 	{
 	_putchar(s[j]);
 	}
