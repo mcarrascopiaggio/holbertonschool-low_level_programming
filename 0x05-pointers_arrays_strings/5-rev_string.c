@@ -13,6 +13,8 @@ void rev_string(char *s)
 int i;
 int l;
 int j;
+int temp;
+int f;
 
 l = 0;
 
@@ -20,11 +22,10 @@ for (i = 0; s[i] != 0 ; i++)
 	{
 	l = l + 1;
 	}
-for (j = (l - 1) ; j >= 0 ; j--)
+for (j = 0, f = l - 1 ; s[j] != 0 ; j++, f--)
 	{
-	*(s + j) = *(s + j - 1);
-	_putchar(s[j]);
+		temp = s[j];
+		s[j] = s[l];
+		s[l] = temp;
 	}
-
-	_putchar(10);
 }
