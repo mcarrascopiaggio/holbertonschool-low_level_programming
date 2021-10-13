@@ -29,7 +29,7 @@ if (l % 2 == 0)
 	}
 	else
 	{
-	for (j = (l - 1) / 2 ; str[j] ; j++)
+	for (j = (l + 1) / 2 ; str[j] ; j++)
 		{
 		_putchar(str[j]);
 		}
