@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-*print_rev - print reverse
-*@s: parametrer one
+*puts_half - print reverse
+*@str: parametrer one
 *Return: Always 0.
 */
 
 
-void print_rev(char *s)
+void puts_half(char *str)
 {
 
 int i;
@@ -16,13 +16,13 @@ int j;
 
 l = 0;
 
-for (i = 0; s[i] != 0 ; i++)
+for (i = 0; str[i] != 0 ; i++)
 	{
 	l = l + 1;
 	}
-for (j = (l - 1) ; j >= 0 ; j--)
+for (j = (l / 2) ; str[j] != 0 ; j++)
 	{
-	_putchar(s[j]);
+	_putchar(str[j]);
 	}
 	_putchar(10);
 }
