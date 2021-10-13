@@ -20,9 +20,19 @@ for (i = 0; str[i] != 0 ; i++)
 	{
 	l = l + 1;
 	}
-for (j = (l / 2) ; str[j] != 0 ; j++)
+if (l % 2 == 0)
 	{
-	_putchar(str[j]);
+	for (j = (l / 2) ; str[j] != 0 ; j++)
+		{
+		_putchar(str[j]);
+		}
+	}
+	else
+	{
+	for (j = (l - 1) / 2 ; str[j] ; j++)
+		{
+		_putchar(str[j]);
+		}
 	}
 	_putchar(10);
 }
