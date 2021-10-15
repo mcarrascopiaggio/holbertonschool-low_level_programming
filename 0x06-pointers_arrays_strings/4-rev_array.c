@@ -15,7 +15,7 @@ int j;
 
 temp = 0;
 
-for (j = 0 ; j < n/2; j++)
+for (j = 0 ; j < n / 2; j++)
 	{
 	temp = a[n];
 	a[n] = a[j];
