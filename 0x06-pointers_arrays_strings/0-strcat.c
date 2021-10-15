@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 *_strcat - swaps values
 *@src: character source
@@ -12,9 +11,13 @@ char *_strcat(char *dest, char *src)
 {
 int l;
 int i;
+int j;
+l = 0;
 
-l = _strlen(dest);
-
+for (j = 0 ; dest[j] != 0 ; j++)
+{
+	l = l + 1;
+}
 for (i = 0 ; src[i] != 0 ; i++)
 	{
 	dest[l + i] = src[i];
