@@ -17,9 +17,9 @@ temp = 0;
 
 for (j = 0 ; j < n / 2; j++)
 	{
-	temp = a[n];
-	a[n] = a[j];
-	a[j] = temp;
+	temp = a[j];
+	a[j] = a[n - j - 1];
+	a[n - j - 1] = temp;
 	}
 
 }
