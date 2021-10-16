@@ -12,12 +12,11 @@ char *rot13(char *src)
 
 int i;
 int j;
-int temp;
+char temp;
 i = 0;
 j = 26;
-temp = 0;
 
-for (i = 0; src[i] != '\0'; i++)
+for (i = 0, j = 26; src[i] < 13; i++, i--)
 {
 	if ((src[i] >= 65 && src[i] <= 90) || (src[i] >= 97 && src[i] <= 122))
 	{
