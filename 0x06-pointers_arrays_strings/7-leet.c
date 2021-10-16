@@ -14,16 +14,18 @@ int i;
 int j;
 char Lt[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
 char Nm[] = {'4', '3', '1', '0', '7', '4', '3', '1', '0', '7'};
+i = 0;
+j = 0;
 
-for (i = 0 ; src[i] != 0 ; i++)
+for (i = 0; src[i] != 0; i++)
+{
+	for (j = 0; j < 10; j++)
 	{
-			for (j = 0 ; j < 10 ; j++)
-			{
-				if (src[i] == Lt[j])
-				{
-					src[i] = Nm[j];
-				}
-			}
+		if (src[i] == Lt[j])
+		{
+			src[i] = Nm[j];
+		}
 	}
+}
 return (src);
 }
