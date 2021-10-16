@@ -15,7 +15,7 @@ i = 0;
 
 for (i = 0; src[i] != '\0'; i++)
 {
-	if ((src[i] >= 65 && src[i] <= 77) || (src[i] >= 97 && src[i] <= 122))
+	if ((src[i] >= 65 && src[i] <= 77) || (src[i] >= 97 && src[i] <= 109))
 	{
 		src[i] = src[i] + 13;
 	}
