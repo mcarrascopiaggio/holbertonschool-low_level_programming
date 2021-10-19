@@ -19,20 +19,27 @@ char *_strstr(char *haystack, char *needle)
 		n++;
 	}
 
-	for (i = 0; haystack[i] != 0; i++)
-	{
-		for (j = 0; needle[j] != 0; j++)
-		{
-			if (haystack[i + j] != needle[j])
-			{
-			break;
-			}
-		}
-	if (j == n)
-	{
-		haystack = haystack + i;
-		break;
+	if (n == 0)
+{
+		haystack = haystack;
 	}
+	else
+	{
+		for (i = 0; haystack[i] != 0; i++)
+		{
+			for (j = 0; needle[j] != 0; j++)
+			{
+				if (haystack[i + j] != needle[j])
+				{
+				break;
+				}
+			}
+		if (j == n)
+		{
+			haystack = haystack + i;
+			break;
+		}
+		}
 	}
 	return (haystack);
 }
