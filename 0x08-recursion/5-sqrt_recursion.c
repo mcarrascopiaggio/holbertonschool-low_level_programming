@@ -18,7 +18,7 @@ if (m >= 0 && s < m)
 	return (root(m, r + 1));
 
 else
-	if ((s) == m)
+	if (s == m)
 	{
 	return (m);
 	}
@@ -37,5 +37,5 @@ return (-1);
 
 int _sqrt_recursion(int n)
 {
-return (root(n, 1));
+return (root(n, 0));
 }
