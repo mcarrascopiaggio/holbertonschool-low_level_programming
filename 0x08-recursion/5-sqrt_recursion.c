@@ -20,7 +20,7 @@ if (m >= 0 && s < m)
 else
 	if (s == m)
 	{
-	return (m);
+	return (r);
 	}
 else
 {
