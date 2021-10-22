@@ -10,27 +10,35 @@
 *
 */
 
-
 int main(int argc, char *argv[])
 {
-int i, sum = 1;
+int i, j, sum = 1;
+int count = 0;
 
 if (argc == 1)
-	printf("0");
+	printf("0\n");
 if (argc > 1)
 {
 	for (i = 1; i < argc; i++)
 	{
-	if (atoi(argv[i]) > 0 && isdigit(argv[i] != 0)
+	if (isdigit(argv[i] == 0))
 	{
-			sum = sum + atoi(argv[i]);
+	count++;
+	}
+	if (count != 0)
+	{
+		for (j = 1; j < argc; j++)
+		{
+		sum = sum + atoi(argv[j]);
+		printf("%d\n", sum);
+		}
 	}
 	else
 	{
-		printf("error");
-		return (1);
+	printf("error\n");
+	return (1);
 	}
-	}	
-printf("%d\n", sum);
-	return (0);
+	}
+	}
+return (0);
 }
