@@ -17,6 +17,10 @@ if (size == 0)
 {
 return (NULL);
 }
+if (c == 0)
+{
+return (NULL);
+}
 
 str = malloc(sizeof(char) * size * c);
 if (str == NULL)
@@ -28,4 +32,5 @@ for (i = 0; i < size; i++)
 	str[i] = c;
 }
 return (str);
+free(str);
 }
