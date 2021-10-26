@@ -17,7 +17,7 @@ if (size == 0)
 {
 return (NULL);
 }
-if (c == 0)
+if (c == '\0')
 {
 return (NULL);
 }
