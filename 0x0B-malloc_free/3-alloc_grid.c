@@ -29,7 +29,7 @@ for (i = 0; i < height; i++)
 	array[i] = malloc(sizeof(int) * width);
 	if (array[i] == 0)
 	{
-		for (i = width ; i <= 0; i--)
+		for ( ; i <= 0; i++)
 		{
 			free(array[i]);
 		}
