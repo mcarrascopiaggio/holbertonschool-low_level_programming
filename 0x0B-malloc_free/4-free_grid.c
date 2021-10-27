@@ -15,7 +15,7 @@ int i = 0;
 
 if (grid[i] == 0)
 {
-	for (i = height ; i >= 0; i--)
+	for (i = 0 ; i < height; i++)
 	{
 		free(grid[i]);
 	}
