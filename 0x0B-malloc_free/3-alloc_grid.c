@@ -24,7 +24,7 @@ if (array == 0)
 	free(array);
 	return (NULL);
 }
-for (i = 0; i <= height; i++)
+for (i = 0; i < height; i++)
 {
 	array[i] = malloc(sizeof(int) * width);
 	if (array[i] == 0)
@@ -37,7 +37,7 @@ for (i = 0; i <= height; i++)
 		return (NULL);
 	}
 }
-for (i = 0; i <= height; i++)
+for (i = 0; i < height; i++)
 {
 	for (j = 0; j <= width; j++)
 	{
