@@ -27,9 +27,13 @@ for (i = 0; s1[i] != 0; i++)
 {
 ;
 }
-for (j = 0; s2[j] != 0 && j < n; j++)
+for (j = 0; s2[j] != 0; j++)
 {
 ;
+}
+if (n >= j)
+{
+	n = j;
 }
 k = i + n + 1;
 
@@ -50,5 +54,3 @@ s[first + sc] = s2[sc];
 s[sc + 1] = 0;
 return (s);
 }
-
-
