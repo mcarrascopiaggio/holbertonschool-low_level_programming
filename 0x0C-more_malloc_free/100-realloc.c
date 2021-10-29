@@ -37,8 +37,10 @@ for (i = 0; i < old_size; i++)
 }
 free(new);
 fin  = malloc(new_size);
+if (fin == NULL)
+	return (NULL);
 
-for (j = 0; j < new_size; j++)
+for (j = 0; j < old_size; j++)
 fin[j] = temp[j];
 return (fin);
 free(fin);
