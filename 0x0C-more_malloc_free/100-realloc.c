@@ -1,8 +1,8 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
-*_realloc: eallocates a memory
+*_realloc - function
 *Description: eallocates a memory block using malloc and free
 *@ptr: pointer to the memory previously allocated
 *@old_size: is the size, in bytes, of the allocated space for ptr
