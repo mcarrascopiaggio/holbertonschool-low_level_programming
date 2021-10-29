@@ -36,7 +36,7 @@ for (first = 0; s1[first] != 0; first++)
 {
 s[first] = s1[first];
 }
-for (sc = 0; sc < k; sc++)
+for (sc = 0; s2[sc] != 0 && sc < n; sc++)
 {
 s[first + sc] = s2[sc];
 }
