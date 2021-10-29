@@ -37,6 +37,6 @@ for (sc = 0; s2[sc] != 0 && sc < n; sc++)
 {
 s[first + sc] = s2[sc];
 }
-s[k + 1] = 0;
+s[k] = 0;
 return (s);
 }
