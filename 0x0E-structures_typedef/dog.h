@@ -1,11 +1,16 @@
+#ifndef DOG
+#define DOG
+
 /**
  *Define a new type struct dog
  *Return: dog details
+ *
  */
 
-struct my_dog
+struct dog
 {
 char *name;
 float age;
 char *owner;
 };
+#endif
