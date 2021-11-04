@@ -17,25 +17,24 @@ char *str;
 
 if (n > 0)
 {
-va_start(par, n);
+	va_start(par, n);
 
-str = va_arg(par, char*);
-
-{
-for (i = 0; i < n ; i++)
-{
-	if (str == NULL)
 	{
-	str = "(nil)";
-	}
-	printf("%s", str);
-	if ((separator == NULL) || (i == (n - 1)))
+	for (i = 0; i < n ; i++)
 	{
-		continue;
+		str = va_arg(par, char*);
+		if (str == NULL)
+		{
+		str = "(nil)";
+		}
+		printf("%s", str);
+		if ((separator == NULL) || (i == (n - 1)))
+		{
+			continue;
+		}
+		printf("%s", separator);
 	}
-	printf("%s", separator);
-}
-}
+	}
 printf("\n");
 va_end(par);
 return;
