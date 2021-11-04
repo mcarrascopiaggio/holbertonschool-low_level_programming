@@ -15,26 +15,30 @@ va_list par;
 unsigned int i = 0;
 char *str;
 
+if (n > 0)
+{
 va_start(par, n);
 
 str = va_arg(par, char*);
 
+{
 for (i = 0; i < n ; i++)
 {
 	if (str == NULL)
 	{
 	str = "(nil)";
 	}
-	printf("%s", va_arg(par, char*));
+	printf("%s", str);
 	if ((separator == NULL) || (i == (n - 1)))
 	{
 		continue;
 	}
 	printf("%s", separator);
 }
+}
 printf("\n");
 va_end(par);
 return;
-
+}
 }
 
