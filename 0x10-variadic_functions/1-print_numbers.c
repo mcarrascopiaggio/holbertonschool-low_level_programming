@@ -14,6 +14,7 @@ va_list par;
 unsigned int i = 0;
 
 if (n <= 0)
+	printf("\n");
 	return;
 
 va_start(par, n);
