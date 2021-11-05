@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 va_list par;
 char *str;
 char *sep;
-unsigned int i = 0;
+size_t i = 0;
 
 va_start(par, format);
 sep = "";
