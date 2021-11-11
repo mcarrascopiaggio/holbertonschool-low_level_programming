@@ -19,11 +19,11 @@ else
 	{
 		if (h->str == NULL)
 		{
-			printf("[0] (nil)");
+			printf("[0] (nil) \n");
 		}
 		else
 		{
-		printf("[%d] %s", h->len, h->str);
+		printf("[%d] %s \n", h->len, h->str);
 		}
 		cnodes++;
 		h = h->next; /** way to move from node to node */
