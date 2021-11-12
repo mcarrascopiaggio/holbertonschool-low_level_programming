@@ -8,13 +8,13 @@
 
 void free_list(list_t *head)
 {
-list_t *temp;
+list_t *temp; /**var to save information for next address to free*/
 
 while (head)
 {
-	temp = head;
-	head = head->next;
-	free(temp->str);
-	free(temp);
+	temp = head; /**save head inf before advance*/
+	head = head->next;/**move forward before free*/
+	free(temp->str);/**free information saved in first step*/
+	free(temp);/**free information saved in first step*/
 }
 }
