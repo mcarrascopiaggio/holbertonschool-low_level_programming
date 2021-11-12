@@ -31,7 +31,9 @@ else
 {
 	temp = *head;
 	while (temp->next != NULL) /**mov adresses trought nodes*/
+	{
 		temp = temp->next;
+	}
 }
 temp->next = new_node;
 return (new_node);
