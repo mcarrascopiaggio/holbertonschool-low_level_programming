@@ -16,6 +16,8 @@ return (NULL);
 
 while (count < index)
 {
+	if (head == NULL)
+		break;
 	head = head->next;
 	count++;
 }
