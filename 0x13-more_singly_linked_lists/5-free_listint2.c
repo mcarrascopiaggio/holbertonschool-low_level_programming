@@ -11,9 +11,9 @@ listint_t *aux;
 
 	while (head)
 	{
-		aux = *head;
-		*head = aux->next;
-		free(aux);
+		aux = (*head)->next;
+		free(*head);
+		*head = aux;
 	}
 	*head = NULL;
 }
