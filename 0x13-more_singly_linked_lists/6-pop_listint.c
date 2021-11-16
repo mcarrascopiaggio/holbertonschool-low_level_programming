@@ -8,21 +8,17 @@
 
 int pop_listint(listint_t **head)
 {
-listint_t *curr, *to_rm;
-int n;
+listint_t *aux = NULL;
+int n = 0; /**content of the remove node*/
 
 if (*head == NULL)
 	return (0);
-else
-{
-	for (*curr = *head; curr->next != NULL; curr = curr->next)
-		{
-			if (curr->next == n
-			{
-			*to_rm = curr->next;
-			curr->next = curr->next->next;
-			free(to_rm);
-			}
-		}	
-}
+
+n = (*head)->n; /** save the value*/
+aux = *head; /** save the node*/
+aux  = aux->next;
+free(*head);
+*head = aux;
+
+return (n);
 }
