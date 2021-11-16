@@ -21,8 +21,15 @@ if (*head == NULL) /**if there are no nodes and new is the first*/
 {
 	new->next = NULL;
 	*head = new;
+	return (new);
 }
-after = *head;/** start loop in head*/
+if (idx == 0)/**if the node will be in the first place*/
+{
+	new->next = *head;
+	*head = new;
+	return (new);
+}
+after = *head;/** fot other places to the node*/
 while (count < idx)
 {
 if (after == NULL)
