@@ -30,7 +30,7 @@ if (idx == 0)/**if the node will be in the first place*/
 	return (new);
 }
 after = *head;/** fot other places to the node*/
-while (idx > 1)
+while (count < idx)
 {
 if (after == NULL)
 	break;
