@@ -17,7 +17,7 @@ new = malloc(sizeof(listint_t));
 if (new == NULL)
 	return (NULL);
 
-if (*head == NULL) /**if there are no nodes and new is the first*/
+if (*head == NULL || head == NULL) /**if there are no  and new is the first*/
 {
 	new->next = NULL;
 	*head = new;
