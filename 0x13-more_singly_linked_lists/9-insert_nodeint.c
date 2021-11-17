@@ -10,7 +10,7 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-listint_t *new, *before, *after;
+listint_t *new, *after;
 unsigned int count = 0;
 
 new = malloc(sizeof(listint_t));
@@ -29,17 +29,14 @@ if (idx == 0)/**if the node will be in the first place*/
 	*head = new;
 	return (new);
 }
-after = *head;/** fot other places to the node*/
-while (count < idx)
-{
-if (after == NULL)
-	break;
-before = after;
-after = after->next;
-count++;
-}
-before->next = new;
 new->n = n;
-new->next = after;
+new->next = NULL;
+after = *head;/** fot other places to the node*/
+for (count = 0; count < idx - 1; count++)
+{
+	after = after->next;
+}
+new->next = after->next;
+after->next = new;
 return (new);
 }
