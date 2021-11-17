@@ -12,7 +12,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 listint_t *temp1 = NULL, *temp2 = NULL;
 unsigned int i;
 
-if (*head == NULL)
+if (*head == NULL || head == NULL)
 	return (-1);
 
 temp1 = *head;
@@ -24,6 +24,8 @@ if (index == 0)/**case delete the head node*/
 }
 for (i = 0; i < index - 2; i++)/**go trought nodes until idex -2*/
 {
+	if (temp1 == NULL)
+		return (-1);
 	temp1 = temp1->next;/**at finish temp1 points index-1*/
 }
 temp2 = temp1->next;/**this node index*/
