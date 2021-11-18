@@ -8,10 +8,19 @@
 
 void print_binary(unsigned long int n)
 {
-int i = 0, result = 0;
+int i = 0, j = 0, result = 0;
 
-
-for (i = 31; i >= 0; i--)
+for (j = 31; j >= 0; j--)
+{
+	result = n >> j;
+	if (result & 1)
+		break;
+}
+if (n == 0)
+{
+	putchar ('0');
+}
+for (i = j; i >= 0; i--)
 {
 	result = n >> i;
 	if ((result & 1) != 0)
@@ -19,5 +28,4 @@ for (i = 31; i >= 0; i--)
 	else
 		_putchar ('0');
 }
-_putchar (10);
 }
