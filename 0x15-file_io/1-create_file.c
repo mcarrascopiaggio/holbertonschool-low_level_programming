@@ -20,13 +20,15 @@ fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 if (fd == -1)
 	return (-1);
-for (i = 0; text_content[i] != '\0'; i++)
+if (text_content)
 {
+	for (i = 0; text_content[i] != '\0'; i++)
+	{
+	}
+	w = write(fd, text_content, i);
+	if (w == -1)
+		return (-1);
 }
-w = write(fd, text_content, i);
-if (w == -1)
-	return (-1);
-
 close(fd);
 return (1);
 }
