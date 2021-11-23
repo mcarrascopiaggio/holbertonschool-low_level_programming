@@ -10,7 +10,7 @@
 int main(int argc, char **argv)
 {
 
-int file_from, file_to;
+int file_from, file_to, clo_from = 0, clo_to = 0;
 
 if (argc != 3)
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
@@ -28,7 +28,17 @@ if (file_to == -1)
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 	exit(99);
 }
-
+clo_from = close(file_from);
+if (clo_from == -1)
+{
+	dprintf(STDERR_FILENO, "Error: Can't close fd file_from\n");
+	exit(100);
+}
+clo_to = close(file_to);
+if (clo_to == -1)
+{
+	dprintf(STDERR_FILENO, "Error: Can't close fd file_to\n");
+}
 return (1);
 }
 
