@@ -76,21 +76,6 @@ i++;
 return (dest);
 }
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-char s1[] = "Hello";
-char s2[] = "World!";
-
-printf("%d\n", _strcmp(s1, s2));
-printf("%d\n", _strcmp(s2, s1));
-printf("%d\n", _strcmp(s1, s1));
-return (0);
-}
-/**
 *_memset - prints buffer in hexa.
 *@s: the address of memory to print.
 *@n: the size of the memory to print.
@@ -107,4 +92,31 @@ char *_memset(char *s, char b, unsigned int n)
 	s[i] = b;
 	}
 return (s);
+}
+/**
+ *_strcmp - compares two strings
+ * @s1: string one
+ * @s2: string two
+ * Return: value of comparation.
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+	int i, x = 0, z, l1 = 0, l2 = 0;
+
+	for (i = 0; s1[i] != '\0'; i++)
+		l1++;
+	for (i = 0; s2[i] != '\0'; i++)
+		l2++;
+	if (l1 >= l2)
+		z = l1;
+	else
+		z = l2;
+	for (i = 0; i < z; i++)
+	{
+		x = s1[i] - s2[i];
+			if (x != 0)
+				i = z;
+	}
+	return (x);
 }
