@@ -32,7 +32,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int count = dlistint_len(*h);
 	unsigned int i = 0;
 
-	if (!*h || !h || idx >= count)
+	if (!h || idx >= count)
 	{
 		return (NULL);
 	}
