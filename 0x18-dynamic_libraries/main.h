@@ -1,6 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
 int add(int a, int b);
 int sub(int a, int b);
 int div(int a, int b);
