@@ -36,32 +36,6 @@ void _puts(char *str)
 }
 
 /**
- * _strncat - concatenate n bytes to destination string
- * @dest: string to be appended to
- * @src: string to append
- * @n: append n number of bytes(chars)
- * Return: concatenated string
- */
-
-char *_strncat(char *dest, char *src, int n)
-{
-	int p1 = 0;
-	int p2 = 0;
-
-	while (dest[p1] != '\0')
-		p1++;
-
-	while (src[p2] != src[n])
-	{
-		dest[p1 + p2] = src[p2];
-		p2++;
-	}
-	dest[p1 + p2] = '\0';
-
-	return (dest);
-}
-
-/**
  * _strcpy - copies the string pointed to by src,
  * including the terminating null byte, to the
  * buffer pointed to by dest.
@@ -101,4 +75,27 @@ int _isupper(int c)
 	{
 		return (0);
 	}
+}
+/**
+ * _strcmp - compares two strings
+ *
+ * Description: compares two strings
+ *
+ * @s1: pointer
+ * @s2: pointer
+ * Return: 0 if equal, negtive if s1<s2, positive if s1>s2
+ */
+int _strcmp(char *s1, char *s2)
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+
+	while ((s1[a] == s2[b]) && (s1[a] != '\0') && (s2[a] != '\0'))
+	{
+		a++;
+		b++;
+	}
+	c = s1[a] - s2[a];
+	return (c);
 }
