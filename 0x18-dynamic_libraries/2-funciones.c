@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>
+
 /**
  * _islower - checks for argument c if it is lowercase
  *
